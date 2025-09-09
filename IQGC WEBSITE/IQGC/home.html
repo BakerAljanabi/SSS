@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IQGC — Iraqi Gamers Connect</title>
+  <link rel="icon" href="/IQGC WEBSITE/IQGC/images/temp_logo(1).png" />
+  <link rel="stylesheet" href="/IQGC WEBSITE/IQGC/style.css" />
+<header>
+  <div class="container nav">
+    <div class="brand-wrap">
+      <img id="event-logo" class="logo" src="/IQGC WEBSITE/IQGC/images/temp_logo(1).png" alt="IQGC logo" />
+      <div class="brand" id="brand">IQGC — Iraqi Gamers Connect</div>
+    </div>
+    <div class="nav-group">
+      <nav class="links">
+        <a href="#home" id="nav-home">Home</a>
+        <a href="#about" id="nav-about">About</a>
+        <a href="#recap" id="nav-recap">2025 Recap</a>
+        <a href="/IQGC WEBSITE/IQGC/gallery.html" id="nav-gallery">Photos</a>
+        <a href="#media" id="nav-media">Video</a>
+        <a href="#magazine" id="nav-magazine">Magazine</a>
+        <a href="#contact" id="nav-contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="menuBtn" aria-label="menu" title="menu">☰</button>
+      <button class="btn ghost" id="langBtn">AR</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="m-links"></div>
+  </div>
+</header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero reveal">
+      <div class="container wrap">
+        <div class="kicker" id="hero-kicker">Iraq's Games & Dev Festival</div>
+        <h1 id="hero-title">IQGC — Connecting Gamers & Devs in Iraq</h1>
+        <p class="lead" id="hero-sub">Next edition in progress — follow us to stay updated.</p>
+        <div class="cta reveal-stagger">
+          <button class="btn primary disabled" id="registerBtn" disabled aria-disabled="true" title="Registration is closed for now">Registration Closed</button>
+          <span class="note" id="registerNote">Opens soon — follow updates.</span>
+        </div>
+        <div class="cards reveal-stagger">
+          <div class="card"><div><div class="label" id="meta-where">Venue</div><div class="value" id="meta-venue">TBA</div></div></div>
+          <div class="card"><div><div class="label" id="meta-when">Date</div><div class="value" id="meta-date">TBA</div></div></div>
+          <div class="card"><div><div class="label" id="meta-who">Expected</div><div class="value" id="meta-att">+1000 attendees (est.)</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-pad reveal">
+      <div class="container grid-2">
+        <div class="reveal-stagger">
+          <div class="title" id="about-title">Who we are</div>
+          <p id="about-body-1"></p>
+          <p id="about-body-2" style="display:none"></p>
+          <div style="margin-top:10px">
+            <a id="links-btn" class="btn ghost small" href="#" target="_blank" rel="noopener">Our Links</a>
+          </div>
+        </div>
+        <div class="frame" style="aspect-ratio:16/10">
+          <img id="about-img" src="/IQGC WEBSITE/IQGC/images/aboutus2.jpg" alt="about" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IS IQGC -->
+    <section id="what-iqgc" class="section-pad reveal">
+      <div class="container grid-2">
+        <div class="frame" style="aspect-ratio:16/10">
+          <img id="what-img" src="/IQGC WEBSITE/IQGC/images/about-us.jpg" alt="what is IQGC" loading="lazy" />
+        </div>
+        <div class="reveal-stagger">
+          <div class="title" id="what-title">What is IQGC?</div>
+          <p id="what-body-1"></p>
+          <p id="what-body-2"></p>
+          <p id="what-body-3"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECAP 2025 -->
+    <section id="recap" class="section-pad reveal">
+      <div class="container">
+        <div class="title" id="recap-title"></div>
+        <div class="grid-2" style="margin-top:16px">
+          <ul id="recap-bullets" class="reveal-stagger" style="margin:0;padding-inline-start:20px"></ul>
+          <div class="recap-stats" id="recap-stats"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY (preview only) -->
+    <section id="gallery" class="section-pad reveal">
+      <div class="container">
+        <div class="title-row">
+          <div class="title" id="gallery-title">Photos from 2025</div>
+          <!-- زر عرض المزيد -->
+          <a id="viewMoreBtn" class="btn ghost small" href="/IQGC WEBSITE/IQGC/gallery.html">View more</a>
+        </div>
+        <div class="gallery reveal-stagger" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- MEDIA -->
+    <section id="media" class="section-pad reveal">
+      <div class="container grid-2">
+        <div>
+          <div class="title" id="media-title"></div>
+          <div class="media-vid" id="videoWrap"></div>
+        </div>
+        <div>
+          <p id="media-desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAGAZINE -->
+    <section id="magazine" class="section-pad reveal">
+      <div class="container">
+        <div class="title" id="mag-title"></div>
+        <p id="mag-desc"></p>
+        <a id="mag-btn" class="btn primary" href="/IQGC WEBSITE/IQGC/downloads/IraqiGamesHistoryMagazine.pdf" target="_blank"></a>
+        <div class="mag-grid reveal-stagger" id="mag-grid"></div>
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
+    <section class="section-pad reveal">
+      <div class="container">
+        <div class="title">Sponsors</div>
+        <div class="sponsors reveal-stagger" id="sponsors"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-pad reveal">
+      <div class="container">
+        <div class="title" id="contact-title"></div>
+        <div class="badge" style="margin-top:12px">
+          <span id="contact-line"></span>
+          <a id="contact-email" href="#" style="color:#c7c9ff;font-weight:700"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="reveal">
+    <div class="container foot">
+      <div id="foot-made"></div>
+      <div><span id="foot-socials"></span>: Discord • Instagram • Facebook • YouTube</div>
+    </div>
+  </footer>
+
+  <script src="/IQGC WEBSITE/IQGC/script.js"></script>
+</body>
+</html>

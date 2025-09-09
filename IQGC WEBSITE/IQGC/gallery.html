@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IQGC — Gallery</title>
+  <link rel="icon" href="images/temp_logo(1).png" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:50}
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:92vw;max-height:88vh;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.6)}
+    .lightbox .close{position:absolute;top:16px;right:16px;font-size:28px;line-height:1;background:#16142a;border:1px solid var(--border);border-radius:12px;padding:8px 12px;cursor:pointer;color:#fff}
+
+    .title-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .actions{display:flex;gap:8px;align-items:center}
+    #loadMore{min-width:140px}
+    #status{font-size:13px;color:#cfcaf1}
+
+    /* تقليل تكلفة الرسم للصور */
+    .frame{content-visibility:auto; contain-intrinsic-size: 300px 225px;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand-wrap">
+        <img class="logo" src="images/temp_logo(1).png" alt="IQGC logo" />
+        <div class="brand">IQGC — Iraqi Gamers Connect</div>
+      </div>
+      <div class="nav-group">
+        <nav class="links">
+          <a href="home.html#home">Home</a>
+          <a href="home.html#about">About</a>
+          <a href="home.html#recap">2025 Recap</a>
+          <a href="gallery.html">Photos</a>
+          <a href="home.html#media">Video</a>
+          <a href="home.html#magazine">Magazine</a>
+          <a href="home.html#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section-pad">
+    <div class="container">
+      <div class="title-row">
+        <div class="title">Event Photos</div>
+        <div class="actions">
+          <a class="btn ghost small" href="home.html#gallery">Back</a>
+          <button id="loadMore" class="btn primary">Load more</button>
+        </div>
+      </div>
+      <p class="lead" style="margin-top:8px">A paginated gallery for better performance.</p>
+      <div id="status"></div>
+      <div class="gallery" id="big-gallery"></div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="close" aria-label="Close">✕</button>
+    <img id="lightbox-img" src="" alt="photo" />
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
